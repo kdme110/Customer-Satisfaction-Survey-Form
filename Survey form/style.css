@@ -1,0 +1,103 @@
+*{
+    text-align: center;
+    margin: 0px;   
+}
+
+.container{
+   background-image: linear-gradient(rgba(15, 36, 77, 0.5), rgb(00, 27, 65)), url("https://media.istockphoto.com/id/1221101939/photo/delivery-concept-asian-man-hand-accepting-a-delivery-boxes-from-professional-deliveryman-at.jpg?s=612x612&w=0&k=20&c=jvZ_phbXmzOrCCZiGn8ZQO99a5skBJlclbujI5jGam8=");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   padding: 50px 0px 50px 0px;
+}
+
+.feedbackform{
+    margin: 50px 400px;
+    border: 1px solid #002765;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}    
+
+.feedbackform h1{
+    margin: 30px 0px 30px 0px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(00, 27, 65);
+}
+
+.formContent{
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Lato', sans-serif;
+    height: 215vh;
+    width: 48vw;   
+    opacity: 0.8; 
+}
+
+.formBody{
+    margin: 10px 0px 30px 125px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30vw;
+    font-size: 1.1rem;
+}
+
+input[type="date"], [type="number"] {
+    margin: 30px 0px 30px 20px;
+}
+
+.name, .number, .mail, .password, .feedback{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.radiobutton, .secondradio, .check{
+    margin: 30px 0px 30px 0px;
+}
+
+#cod, #yes, #monday{
+    margin-top: 10px;
+}
+
+#submitButton{
+    color: #ffffff;
+    background-color: rgb(33, 144, 228);
+    padding:  10px 15px;
+    border-radius: 15px;
+    width: 150px;
+    border: 3px solid rgb(37, 37, 37);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px; /* Add some space between the checkbox and its label */
+    justify-content: center;
+    align-items: center;
+}
+
+#tuesday{
+    margin-left: 4px;
+}
+
+#wednesday{
+    margin-left: 33px;
+}
+
+#thrusday{
+    margin-left: 13px;
+}
+
+#friday{
+    margin-left: -15px;
+}
+
+#saturday{
+    margin-left: 10px;
+}
+
+#sunday{
+    margin-left: -3px;
+}

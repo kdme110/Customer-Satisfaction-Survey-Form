@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Satisfaction Feedback Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="feedbackform">
+                <h1><i class="fa-brands fa-wpforms"></i> Customer Home Delivery Satisfaction Form <i class="fa-brands fa-wpforms"></i></h1><hr>
+                <form onsubmit="return validateForm()"  action="./info.html">
+                    <div class="formContent">
+                        <div class="name">
+                            <label for="inputName">Name</label>
+                            <input type="text" id="inputName"  class="formBody">
+                        </div>
+                        <div class="number">
+                            <label for="inputNumber">Phone Number</label>
+                            <input type="tel" id="inputNumber" pattern="[0-9]{10}"  class="formBody">
+                        </div>
+                        <div class="mail">
+                            <label for="inputEmail">Email Address</label>
+                            <input type="email" id="inputEmail" class="formBody">
+                        </div>
+                        <div class="password">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" id="inputPassword" class="formBody">
+                        </div>
+                        <div class="date">
+                            <label for="inputDate">Date</label>
+                            <input type="date" id="inputDate" class="formBody" style="width: 10vw;">
+                        </div>
+                        <div class="rating">
+                            <label for="inputRate">On a scale of 0-5 how was your delivery experience?</label>
+                            <input type="number" id="inputRate" min="0" max="5" class="formBody" style="width: 4vw;">
+                        </div>
+                        <div class="radiobutton">
+                            <p>Which form of payment is preferable?</p>
+                            <input type="radio" id="cod" name="payment">
+                            <label for="cod">COD</label>
+                            <input type="radio" id="card" name="payment" style="margin-left: 7px;">
+                            <label for="card">Card</label>
+                            <input type="radio" id="upi" name="payment" style="margin-left: 7px;">
+                            <label for="upi">UPI</label>
+                        </div>
+                        <div class="secondradio">
+                            <p style="margin-top: 60px;">Will you shop with us again?</p>
+                            <input type="radio" id="yes" name="revisit" checked>
+                            <label for="yes">YES</label>
+                            <input type="radio" id="no" name="revisit" style="margin-left: 7px;">
+                            <label for="no">NO</label>
+                            <input type="radio" id="maybe" name="revisit" style="margin-left: 7px;">
+                            <label for="maybe">MAYBE</label>
+                        </div>
+                        <div class="check">
+                            <p style="margin-top: 60px;">Which days of the week do you prefer home delivery?</p>
+                            <input type="checkbox" id="monday" name="week">
+                            <label for="monday">Monday</label><br>
+                            <input type="checkbox" id="tuesday" name="week">
+                            <label for="tuesday">Tuesday</label><br>
+                            <input type="checkbox" id="wednesday" name="week">
+                            <label for="wednesday">Wednesday</label><br>
+                            <input type="checkbox" id="thrusday" name="week">
+                            <label for="thrusday">Thrusday</label><br>
+                            <input type="checkbox" id="friday" name="week">
+                            <label for="friday">Friday</label><br>
+                            <input type="checkbox" id="saturday" name="week">
+                            <label for="saturday">Saturday</label><br>
+                            <input type="checkbox" id="sunday" name="week">
+                            <label for="sunday">Sunday</label>
+                        </div>
+                        <div class="drop">
+                            <label for="inputTime" style="margin-top: 30px;">Which time of the day delivery is prederred?</label>
+                            <select id="inputTime" name="daytime" class="formBody" style="width: 8vw; margin-left: 15px;">
+                                <option value="Morning">Morning</option>
+                                <option value="Afternoon">Afternoon</option>
+                                <option value="Evening">Evening</option>
+                                <option value="Night">Night</option>
+                            </select>
+                        </div>
+                        <div class="feedback">
+                            <br>
+                            <label for="inputFeedback">Additional Feedback:</label>
+                            <textarea id="inputFeedback" rows="4" cols="50" class="formBody"></textarea>
+                        </div>
+                        <div class="buttonsubmit">
+                            <input type="submit" id="submitButton" class="=formBody">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="program.js"></script>
+    </body>
+</html>
